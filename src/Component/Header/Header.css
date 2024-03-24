@@ -1,0 +1,5 @@
+.menu li{
+    text-transform: capitalize;
+    font-weight: 800;
+    margin: 0 4px;
+}
