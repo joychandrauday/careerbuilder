@@ -18,10 +18,15 @@ const Jobdetails = () => {
     const idText=parseInt(id)
     const job=jobs.find(job=> job.id === idText)
     const {logo,job_title,company_name,remote_or_onsite,location,job_type,salary,job_description,job_responsibility,educational_requirements,experiences,contact_information}=job;
+
+    
     const notify = () => {
         saveJobApplied(idText)
         toast(`you applied for the post of ${job_title}!`)
     };
+
+
+
     return (
         <div>
             <div className="detailsTop min-h-44 flex items-center justify-center">
